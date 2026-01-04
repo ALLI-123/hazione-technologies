@@ -603,7 +603,83 @@ footer {
 }
 
 
+/* Footer Social Icons */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1.1rem;
+  color: white;
+  background: #4a5568; /* Default dark gray */
+  border-radius: 50%;
+  transition: all 0.3s ease, transform 0.2s;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-social a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Branded Colors */
+.footer-social a[href*="wa.me"] {
+  background: #25D366; /* WhatsApp green */
+}
+.footer-social a[href*="wa.me"]:hover {
+  background: #128C7E;
+}
+
+.footer-social a[href^="mailto"] {
+  background: #D44638; /* Gmail red (works for email) */
+}
+.footer-social a[href^="mailto"]:hover {
+  background: #B03328;
+}
+
+.footer-social a[href*="linkedin.com"] {
+  background: #0A66C2; /* LinkedIn blue */
+}
+.footer-social a[href*="linkedin.com"]:hover {
+  background: #074d99;
+}
+
+.footer-social a[href*="github.com"] {
+  background: #333; /* GitHub black */
+}
+.footer-social a[href*="github.com"]:hover {
+  background: #111;
+}
+
+.footer-social a[href*="x.com"],
+.footer-social a[href*="twitter.com"] {
+  background: #000000; /* X (Twitter) black */
+}
+.footer-social a[href*="x.com"]:hover,
+.footer-social a[href*="twitter.com"]:hover {
+  background: #333;
+}
+
+@media (max-width: 600px) {
+  .footer-social {
+    gap: 0.8rem;
+  }
+  .footer-social a {
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 1rem;
+  }
+}
 
 
 
